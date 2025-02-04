@@ -209,6 +209,7 @@ fn main() {
     let input = args.get(1).map(|s| s.as_str()).unwrap_or_default();
 
     // 获取缓存路径
+    // ~/Library/Caches/com.runningwithcrayons.Alfred/Workflow Data/com.alfredapp.currency-converter
     // let cache_dir = env::var("alfred_workflow_cache").unwrap();
     let cache_dir = String::from("./cache");
     let cache_path = PathBuf::from(cache_dir).join("ratesUSD.json");
