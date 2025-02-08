@@ -4,7 +4,7 @@ pub mod parser;
 pub mod matcher;
 pub mod formatter;
 
-const PRIORITY: [&str; 7] = ["CNY", "USD", "BHD", "EUR", "HKD", "GBP", "JPY"]; // 优先货币列表
+const PRIORITY: [&str; 8] = ["CNY", "USD", "BHD", "EUR", "AED", "HKD", "GBP", "JPY"]; // 优先货币列表
 
 static CURRENCY_NAMES_CN: &[(&str, (&str, &str))] = &[
     ("AED", ("阿联酋", "迪拉姆")),
